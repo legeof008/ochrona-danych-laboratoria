@@ -1,0 +1,6 @@
+Number of passwords to hash: 80306
+Time for md5: 1.8730937382134186e-07
+Time for sha256: 1.5398670637636967e-07
+Number of passwords to hash: 1000
+Time for bcrypt: 0.224746444940567
+Time for argon2: 0.027750109910964965
