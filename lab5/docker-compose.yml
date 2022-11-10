@@ -1,0 +1,13 @@
+services:
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+  php:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    ports:
+      - "5005:8080" 

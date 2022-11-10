@@ -5,3 +5,4 @@ RUN  mkdir -p /etc/apache2
 RUN  rm /etc/nginx/nginx.conf
 COPY .htpasswd /etc/apache2
 COPY nginx.conf /etc/nginx
+EXPOSE 80
