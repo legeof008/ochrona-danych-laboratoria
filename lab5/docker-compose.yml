@@ -11,3 +11,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5005:8080" 
+  uwsgi:
+    build:
+      context: ./uwsgi
+      dockerfile: Dockerfile
+    ports:
+      - "5050:80" 
