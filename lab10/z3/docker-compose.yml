@@ -1,0 +1,8 @@
+services:
+  template:
+    build:
+      context: ./example.com
+      dockerfile: Dockerfile
+    ports:
+      - "8081:443"
+      - "8082:5010"
