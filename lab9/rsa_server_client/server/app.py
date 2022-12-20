@@ -4,7 +4,6 @@ from Crypto.Cipher import PKCS1_OAEP
 import base64
 import os
 
-
 app = Flask(__name__)
 DEADBEEF_KEY_1 = "key.2"
 DEADBEEF_KEY_2 = "key.1"
