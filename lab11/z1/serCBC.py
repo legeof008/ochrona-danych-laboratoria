@@ -66,11 +66,11 @@ no_blocks = int(len(plain_text) / block_size)
 
 starttime = time.time()
 cipher_text = encrypt_CBC_serial(key, plain_text)
-print('ECB Encrypt time serial: ', (time.time() - starttime))
+print('CBC Encrypt time serial: ', (time.time() - starttime))
 
 starttime = time.time()
 decrypted = decrypt_CBC_serial(key, cipher_text)
-print('ECB Decrypt time serial: ', (time.time() - starttime))
+print('CBC Decrypt time serial: ', (time.time() - starttime))
 print('...', decrypted[-15:-1])
 
 # Moja implementacja
@@ -82,7 +82,7 @@ np_arr = numpy.frombuffer(shared_data, dtype=numpy.dtype(shared_data))
 
 parallel_decrypted = "".join(list(map(chr, np_arr[0])))
 
-print('ECB Decrypt time parallel: ', (endtime - starttime))
+print('CBC Decrypt time parallel: ', (endtime - starttime))
 print('...', parallel_decrypted[-15:-1])
 
 with open('ciphertext', 'wb') as f:
